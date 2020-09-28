@@ -27,6 +27,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="file#meio_somador.circ" name="7"/>
   <lib desc="file#completo_somador.circ" name="8"/>
   <lib desc="file#somador_3bits.circ" name="9"/>
+  <lib desc="file#registrador_3bits.circ" name="10"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -76,40 +77,55 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="8" pin="50,430" width="8" x="46" y="106"/>
       <circ-anchor facing="east" height="6" width="6" x="47" y="47"/>
     </appear>
+    <wire from="(470,40)" to="(470,110)"/>
     <wire from="(140,50)" to="(140,60)"/>
     <wire from="(140,90)" to="(140,100)"/>
+    <wire from="(420,40)" to="(470,40)"/>
     <wire from="(70,50)" to="(70,60)"/>
     <wire from="(70,130)" to="(70,140)"/>
     <wire from="(60,330)" to="(60,340)"/>
     <wire from="(60,420)" to="(60,430)"/>
+    <wire from="(360,130)" to="(360,140)"/>
+    <wire from="(330,270)" to="(440,270)"/>
+    <wire from="(330,270)" to="(330,300)"/>
+    <wire from="(290,300)" to="(330,300)"/>
     <wire from="(50,90)" to="(140,90)"/>
     <wire from="(50,380)" to="(140,380)"/>
     <wire from="(50,60)" to="(70,60)"/>
     <wire from="(50,130)" to="(70,130)"/>
+    <wire from="(290,210)" to="(440,210)"/>
     <wire from="(60,340)" to="(140,340)"/>
     <wire from="(60,420)" to="(140,420)"/>
+    <wire from="(360,140)" to="(440,140)"/>
     <wire from="(50,330)" to="(60,330)"/>
     <wire from="(50,430)" to="(60,430)"/>
     <wire from="(70,50)" to="(140,50)"/>
     <wire from="(70,140)" to="(140,140)"/>
-    <comp lib="0" loc="(50,130)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
+    <wire from="(290,130)" to="(360,130)"/>
     <comp lib="0" loc="(50,380)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="9" loc="(290,40)" name="main"/>
-    <comp lib="0" loc="(50,330)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(50,430)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(50,60)" name="Pin">
+    <comp lib="5" loc="(910,180)" name="7-Segment Display"/>
+    <comp lib="0" loc="(50,130)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(50,90)" name="Pin">
       <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(50,330)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="10" loc="(530,120)" name="main"/>
+    <comp lib="0" loc="(50,430)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="9" loc="(290,40)" name="main"/>
+    <comp lib="0" loc="(50,60)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(420,40)" name="Clock">
+      <a name="label" val="Clock"/>
+      <a name="labelloc" val="north"/>
     </comp>
   </circuit>
 </project>
