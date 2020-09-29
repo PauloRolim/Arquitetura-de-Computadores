@@ -24,8 +24,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </options>
   <mappings>
     <tool lib="6" map="Button2" name="Menu Tool"/>
-    <tool lib="6" map="Button3" name="Menu Tool"/>
     <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
   </mappings>
   <toolbar>
     <tool lib="6" name="Poke Tool"/>
@@ -64,56 +64,59 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="10" pin="520,160" width="10" x="135" y="165"/>
       <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
     </appear>
+    <wire from="(390,140)" to="(430,140)"/>
+    <wire from="(320,120)" to="(340,120)"/>
+    <wire from="(300,90)" to="(360,90)"/>
+    <wire from="(230,50)" to="(320,50)"/>
+    <wire from="(130,140)" to="(150,140)"/>
+    <wire from="(250,90)" to="(300,90)"/>
+    <wire from="(300,90)" to="(300,150)"/>
+    <wire from="(320,50)" to="(360,50)"/>
+    <wire from="(130,70)" to="(170,70)"/>
+    <wire from="(50,30)" to="(90,30)"/>
     <wire from="(420,70)" to="(490,70)"/>
+    <wire from="(130,70)" to="(130,140)"/>
     <wire from="(90,30)" to="(90,170)"/>
     <wire from="(250,90)" to="(250,180)"/>
     <wire from="(90,30)" to="(170,30)"/>
     <wire from="(50,180)" to="(250,180)"/>
+    <wire from="(300,150)" to="(340,150)"/>
+    <wire from="(90,170)" to="(150,170)"/>
     <wire from="(200,150)" to="(290,150)"/>
     <wire from="(50,70)" to="(130,70)"/>
-    <wire from="(290,120)" to="(310,120)"/>
     <wire from="(290,150)" to="(290,180)"/>
-    <wire from="(250,90)" to="(290,90)"/>
+    <wire from="(320,50)" to="(320,120)"/>
     <wire from="(290,180)" to="(430,180)"/>
     <wire from="(480,160)" to="(520,160)"/>
-    <wire from="(290,90)" to="(360,90)"/>
-    <wire from="(130,140)" to="(150,140)"/>
-    <wire from="(50,30)" to="(90,30)"/>
-    <wire from="(130,70)" to="(170,70)"/>
-    <wire from="(130,70)" to="(130,140)"/>
-    <wire from="(360,140)" to="(430,140)"/>
-    <wire from="(290,90)" to="(290,120)"/>
-    <wire from="(90,170)" to="(150,170)"/>
-    <wire from="(230,50)" to="(360,50)"/>
+    <comp lib="0" loc="(50,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Carry entrada"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="1" loc="(480,160)" name="OR Gate"/>
     <comp lib="1" loc="(200,150)" name="AND Gate"/>
+    <comp lib="1" loc="(420,70)" name="XOR Gate"/>
+    <comp lib="1" loc="(230,50)" name="XOR Gate"/>
+    <comp lib="1" loc="(390,140)" name="AND Gate"/>
+    <comp lib="0" loc="(50,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(50,30)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
     <comp lib="0" loc="(520,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Carry Saída"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(50,30)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="1" loc="(230,50)" name="XOR Gate"/>
-    <comp lib="1" loc="(420,70)" name="XOR Gate"/>
-    <comp lib="1" loc="(480,160)" name="OR Gate"/>
-    <comp lib="1" loc="(360,140)" name="AND Gate"/>
-    <comp lib="0" loc="(50,180)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Carry entrada"/>
-      <a name="labelloc" val="south"/>
-    </comp>
     <comp lib="0" loc="(490,70)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Saída"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(50,70)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
     </comp>
   </circuit>
 </project>
